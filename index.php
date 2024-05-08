@@ -18,7 +18,20 @@
             <div class="col-auto">Logo Spotify</div>
         </header>
         <main>
-            {{ message }}
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-4" v-for="(cd, i) in cds">
+                        <div class="card text-center">
+                            <img :src="cd.poster" class="card-img-top" alt="Cd Cover">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ cd.title }}</h5>
+                                <p class="card-text">{{ cd.author }}</p>
+                                <h5 class="card-title">{{ cd.year }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
     </div>
