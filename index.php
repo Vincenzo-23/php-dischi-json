@@ -14,15 +14,15 @@
 
     <div id="app">
 
-        <header class="container-fluid p-5">
-            <div class="col-auto">Logo Spotify</div>
+        <header class="container-fluid p-4 mb-5">
+            <div class="col-auto fw-bold text-success h1">Spotify</div>
         </header>
         <main>
             <div class="container">
                 <div class="row g-5">
                     <div class="col-4" v-for="(cd, i) in cds">
-                        <div class="card text-center">
-                            <img :src="cd.poster" class="card-img-top" alt="Cd Cover">
+                        <div class="card text-center text-white">
+                            <img :src="cd.poster" class="card-img-top cover" alt="Cd Cover">
                             <div class="card-body">
                                 <h5 class="card-title">{{ cd.title }}</h5>
                                 <p class="card-text">{{ cd.author }}</p>
